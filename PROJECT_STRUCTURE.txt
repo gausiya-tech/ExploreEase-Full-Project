@@ -1,0 +1,9 @@
+ExploreEase_Backend/
+  config/                 Django project settings and URLs
+  tours/                  Models, forms, views, admin and migrations
+  templates/              Django HTML pages
+  static/css/style.css    Responsive website styling
+  static/js/main.js       Navigation interaction
+  manage.py
+  requirements.txt
+  README.md

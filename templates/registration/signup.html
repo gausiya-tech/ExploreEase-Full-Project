@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}Sign Up | ExploreEase{% endblock %}
+
+{% block content %}
+
+<section class="form-section">
+    <div class="form-card">
+
+        <h1>Create Account</h1>
+        <p>Join ExploreEase and plan your next journey.</p>
+
+        <form method="post">
+            {% csrf_token %}
+
+            {{ form.as_p }}
+
+            <button type="submit" class="btn">
+                Sign Up
+            </button>
+        </form>
+
+        <p>
+            Already have an account?
+            <a href="{% url 'login' %}">Login here</a>
+        </p>
+
+    </div>
+</section>
+
+{% endblock %}
